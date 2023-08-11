@@ -1,4 +1,7 @@
 class Solution:
     def mostWordsFound(self, sentences: List[str]) -> int:
-        return max(s.count(" ") for s in sentences) + 1
-            
+        lengths = [] 
+        for sentence in sentences: 
+            word_count = sentence.count(" ") + 1  
+            lengths.append(word_count)
+        return max(lengths)
