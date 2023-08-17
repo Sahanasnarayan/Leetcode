@@ -6,7 +6,7 @@ class Solution:
         low, high = 0, row * col - 1       
         while low <= high:
             mid = (low + high) // 2
-            num = matrix[mid // col][mid % col] #this gives row and column number
+            num = matrix[mid // col][mid % col] #this gives row and column number. this is a logic
             if num == target:
                 return True
             elif num < target:
