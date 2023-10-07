@@ -16,6 +16,7 @@ class Solution:
                 else:
                     low = mid + 1
             else:
+                #check this if condition with above if conditions, its similar
                 if nums[mid] <= target <= nums[high]:
                     low = mid + 1
                 else:
